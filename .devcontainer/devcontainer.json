@@ -18,7 +18,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
-				"ms-azuretools.vscode-azurefunctions"
+				"ms-azuretools.vscode-azurefunctions",
+				"GitHub.vscode-github-actions"
 			]
 		}
 	}
