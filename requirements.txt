@@ -4,7 +4,10 @@
 
 azure-functions
 azure-ai-documentintelligence
+pytest
+requests
+
 
 # https://github.com/Unstructured-IO/unstructured
-unstructured[jpeg,png]
+unstructured[image,jpeg,png]
 #poppler-utils

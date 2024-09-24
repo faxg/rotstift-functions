@@ -5,22 +5,25 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.8",
 	"features": {
-		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": true,
-			"version": "3.10"
-		},
-		"ghcr.io/devcontainers/features/azure-cli:1": {
-			"installBicep": true,
-			"version": "latest"
-		}
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
 				"ms-azuretools.vscode-azurefunctions",
-				"GitHub.vscode-github-actions"
+				"GitHub.vscode-github-actions",
+				"github.vscode-github-actions",
+				"GitHub.copilot"
 			]
+		}
+	},
+	"portsAttributes": {
+		"7071": {
+			"label": "7071 (Function App - func start)"
 		}
 	}
 
